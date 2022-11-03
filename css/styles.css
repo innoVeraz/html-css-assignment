@@ -11,7 +11,7 @@ button {
     border: 0;
     right: 20px;
     top: 20px;
-    z-index: 2;
+    z-index: 7;
     pointer-events: none;
 }
 
@@ -31,14 +31,14 @@ button span {
     top: 20px;
     width: 40px;
     height: 35px;
-    z-index: 1;
+    z-index: 8;
     opacity: 0;
     
 }
 
 input:checked + .menu button span {
     position: absolute;
-    transition: all 0.3s ease-in-out;
+    transition: all 0,3 ease-in-out;
 }
 
 input:checked + .menu button span:nth-child(2){
@@ -55,14 +55,19 @@ input:checked + .menu button span:nth-child(3) {
     
 }
 
-
-
 nav {
     margin-top: 0;
     position: fixed;
     width: 100vw;
     height: 100vh;
+    background-image: url("../assets/photos/adam-miller-dBaz0xhCkPY-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: center;
     visibility: hidden;
+    z-index: 6;
+    
+    
 }
 
 nav > ul li a {
@@ -82,6 +87,7 @@ nav > ul li a:hover {
 
 input:checked + .menu nav {
     visibility: visible;
+    
 }
 
 ul {
@@ -120,6 +126,8 @@ li {
     border-style: solid;
     border-width: 3px;
     padding: 10px;
+    
+    
       
 }
 
@@ -175,31 +183,83 @@ h1 {
     background-size: cover;  
 }
 
-.headline {
- position: absolute;
+h2 {
+    margin-top: 0%;
+    position: relative;
+    top: 50px;
+    left: 30px;
     
 }
-.space {
-    text-align: left;
-    padding-left: 70px;
-    padding-top: 40px;
-    margin: 0%;
-    color: white;   
-    font-family: 'Rubik', sans-serif;  
-    font-weight: bolder;
-    font-size: 70px;
+
+h2 span {
+    position: relative;
+    display: block;
+
+    
+    
+  }
+  
+  .space {
+    font-family: 'Rubik';
+    text-shadow: 2px 2px 4px #080808;
+    font-size: 3rem;
+    color: white;
+    z-index: 1;
+  }
+  
+  .ventures {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 4rem;
+    text-shadow: 2px 2px 4px #080808;
+    top: -35px;
+    left: 32px;
+    color: rgba(174, 173, 173, 0.831);
+  }
+
+  .all-text {
+    font-family: 'Rubik';
+    font-weight: 300;
+    margin: 30px;
+    line-height: 17px;
+  }
+
+  .headline {
+    color: white;
+    padding-top: 18px;
+    margin: 0px;
+  }
+
+  h3 {
+    margin: 0px;
+  }
+
+  .text-first-part {
+    padding-top: 12px;
+    font-size: 11px;
+    color: white;
+
+  }
+
+.quote {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 15px;
+    font-style: italic;
+    line-height: 20px;
+    color: white;
+
 }
 
+.text-last-part {
+    font-size: 11px;
+    color: white;
+    
+}
 
-.ventures {
-    position: absolute;
-    text-align: left;
-    padding-left: 70px;
-    margin: 0%;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 70px;
-    color: rgba(159, 154, 154, 0.75);   
-
+.arrow-move-2 {
+    color: #D200A2;
+    text-shadow: 2px 2px 2px #D200A2;
+    
 }
 
 
