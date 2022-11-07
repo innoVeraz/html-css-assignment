@@ -173,29 +173,30 @@ h1 {
     display: inline-block;
     font-family: 'Fira Code';
     
+    
 }
-
-
 
 .stars {
     background-image: url("../assets/photos/raphael-nogueira-svbDI1Pq30s-unsplash.jpg");
     background-repeat: no-repeat;  
     background-size: cover;  
+    font-family: 'Rubik';
+    font-weight: 300;
+    margin-top: 0%;
+    padding-top: 30px;
+    padding-right: 40px;
+    padding-left: 40px;
+    line-height: 17px;
 }
 
-h2 {
-    margin-top: 0%;
-    position: relative;
-    top: 50px;
-    left: 30px;
-    
+.space-logo {
+    margin: 0;
+    line-height: initial;
 }
 
 h2 span {
     position: relative;
-    display: block;
-
-    
+    display: block;  
     
   }
   
@@ -208,6 +209,7 @@ h2 span {
   }
   
   .ventures {
+    display: inline;
     font-family: 'Times New Roman', Times, serif;
     font-size: 4rem;
     text-shadow: 2px 2px 4px #080808;
@@ -216,20 +218,9 @@ h2 span {
     color: rgba(174, 173, 173, 0.831);
   }
 
-  .all-text {
-    font-family: 'Rubik';
-    font-weight: 300;
-    margin: 30px;
-    line-height: 17px;
-  }
-
   .headline {
     color: white;
     padding-top: 18px;
-    margin: 0px;
-  }
-
-  h3 {
     margin: 0px;
   }
 
@@ -241,6 +232,7 @@ h2 span {
   }
 
 .quote {
+   
     padding-top: 15px;
     padding-bottom: 15px;
     padding-left: 15px;
@@ -250,6 +242,19 @@ h2 span {
 
 }
 
+
+.desktop-quote p {  
+font-size: 2rem;
+line-height: 1.5;
+background-image: linear-gradient(177deg, #af4261, #f3f1c5, #af4261);
+background-size: 100%;
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+opacity: 50%;
+}
+
+
 .text-last-part {
     font-size: 11px;
     color: white;
@@ -258,9 +263,32 @@ h2 span {
 
 .arrow-move-2 {
     color: #D200A2;
-    text-shadow: 2px 2px 2px #D200A2;
+    text-shadow: #D200A2 1px 0 10px;
     
 }
+
+.desktop-quote { 
+    
+    display: none;
+  }
+
+@media screen and (min-width: 800px) {
+    .stars {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        min-height: auto;
+        gap: 30px;
+    }
+    .flex-item {
+        max-width: 400px;
+        flex: 1 1 auto;
+    }
+    .desktop-quote { 
+        display: block;
+      }
+  }
+
 
 
 
