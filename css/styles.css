@@ -3,7 +3,8 @@
     position: relative;
 }
 
-button {
+
+.hamburger-button {
     position: fixed;
     width: 40px;
     height: 35px;
@@ -15,7 +16,7 @@ button {
     pointer-events: none;
 }
 
-button span {
+.hamburger-button span {
     display: block;
     width: 25px;
     height: 3px;
@@ -66,8 +67,6 @@ nav {
     background-position: center;
     visibility: hidden;
     z-index: 6;
-    
-    
 }
 
 nav > ul li a {
@@ -110,6 +109,10 @@ li {
     padding: 0%;
 }
 
+a {
+    color: #080808;
+}
+
 .astronaut {
    background-image: url("../assets/photos/adam-miller-dBaz0xhCkPY-unsplash.jpg");
    background-repeat: no-repeat;
@@ -120,6 +123,8 @@ li {
 
 .to-the-moon-box {
     position: absolute;
+    display: flex;
+    flex-direction: column;
     top: 40px;
     left: 30px;
     background-color: rgba(255, 255, 255, 0.653);
@@ -186,6 +191,7 @@ h1 {
     padding-top: 30px;
     padding-right: 40px;
     padding-left: 40px;
+    padding-bottom: 65px;
     line-height: 17px;
 }
 
@@ -226,7 +232,7 @@ h2 span {
 
   .text-first-part {
     padding-top: 12px;
-    font-size: 11px;
+    font-size: 13px;
     color: white;
 
   }
@@ -256,21 +262,50 @@ opacity: 50%;
 
 
 .text-last-part {
-    font-size: 11px;
+    font-size: 13px;
     color: white;
     
 }
 
 .arrow-move-2 {
     color: #D200A2;
-    text-shadow: #D200A2 1px 0 10px;
+    font-weight: 500;
     
 }
 
-.desktop-quote { 
+.desktop-quote, .major-tom-img { 
     
     display: none;
   }
+
+  .cookies {
+    background-color: #230e45;
+    display: flex;
+    position: fixed;
+    justify-content: space-between;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    align-items: center;
+  }
+
+.cookies-text {
+    color: #D200A2;
+    font-size: 12px;
+    text-shadow: #D200A2 1px 0 10px;
+}
+
+.cookies-button {
+    background-color: rgb(12, 12, 129);
+    font-weight: 700;
+    color: white;
+    padding: 7px;
+    border: none;
+}
+
+
 
 @media screen and (min-width: 800px) {
     .stars {
@@ -280,6 +315,7 @@ opacity: 50%;
         min-height: auto;
         gap: 30px;
     }
+
     .flex-item {
         max-width: 400px;
         flex: 1 1 auto;
@@ -287,6 +323,15 @@ opacity: 50%;
     .desktop-quote { 
         display: block;
       }
+    .major-tom-img {
+        width: 90px;
+        float: right;
+        display:block;
+        transform:rotate(4deg);
+        padding-top: 13px;
+        padding-right: 10px;
+        
+    }
   }
 
 
